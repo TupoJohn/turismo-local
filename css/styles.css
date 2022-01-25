@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 6rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+h6 {
+    font-size: 1.05rem;
+    padding-top: 2.5%;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    position: fixed;
+}
+
+.column-75 {
+    width: 70%;
+    float: left;
+    margin-left: 14%;
+}
+
+
+/* clases web */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    height: 100vh;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 15%;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#img-1 {
+    height: 50vh;
+    background-image: url("../img/casa\ batllo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img-2 {
+    height: 50vh;
+    background-image: url("../img/pl\ esp.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#img-3 {
+    height: 50vh;
+    background-image: url("../img/tibidabo\ architecture.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#imgart-1 {
+    height: 70vh;
+    background-image: url("../img/muere\ hombre\ art\ 1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#imgart-2 {
+    height: 70vh;
+    background-image: url("../img/animales\ art\ 2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#imgart-3 {
+    height: 70vh;
+    background-image: url("../img/rubi\ art\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#imgart-4 {
+    height: 70vh;
+    background-image: url("../img/basura\ art\ 4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* clases auxiliares */
+
+.padding-s {
+    padding: 3%;
+}
+
+.padding-h {
+    text-align: center;
+}
+
+.padding-m {
+    padding: 6%;
+}
+
+.padding-n {
+    padding-left: 3%;
+}
+
+iframe {
+    width: 230px;
+    height: 600px;
+    border-style: none;
+}
+
+.back-white {
+    background-color: white;
+    padding-right: 20%;
+}
+
+@media only screen and (max-width: 700px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    .column-nav,
+    .column-75 {
+        width: 100%;
+    }
+    .column-75 {
+        margin-left: 0%;
+    }
+    .column-nav {
+        position: relative;
+    }
+    iframe {
+        width: 650px;
+        height: 600px;
+        border-style: none;
+    }
+}
